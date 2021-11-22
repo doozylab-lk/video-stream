@@ -1,7 +1,7 @@
 {
     "name": "ᴅʜᴀɴᴀɴᴊᴀyᴀ ꜱᴛʀᴇᴀᴍɪɴɢ™🇱🇰",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat.",
-    "logo": "https://telegra.ph/file/3cc7e08a99e6436cfd02f.png",
+    "logo": "https://telegra.ph/file/a381b439e2bf6c61703f9.png",
     "keywords": [
         "pytgcalls",
         "telegram bot",
@@ -9,7 +9,7 @@
         "pyrogram"
     ],
     "website": "https://t.me/DhananjayaMadushanka",
-    "repository": "https://github.com/dhananjaya7madhusanka1/video-stream",
+    "repository": "https://github.com/doozylab-lk/video-stream",
     "success_url": "https://t.me/dhananjayarecord",
     "env": {
         "API_ID": {
