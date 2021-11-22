@@ -1,0 +1,16 @@
+git+https://github.com/pyrogram/pyrogram@master
+tgcrypto
+asyncio
+ffmpeg-python
+py-tgcalls==0.8.1rc1
+git+https://github.com/yt-dlp/yt-dlp@master
+youtube-search-python
+youtube-search
+httpx==0.14.2
+python-dotenv
+aiofiles
+aiohttp
+requests
+psutil
+future
+wget
