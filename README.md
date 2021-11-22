@@ -4,7 +4,7 @@
 
 ## 🎭 Preview
 <p align="center">
-  <img src="https://telegra.ph/file/c557fb69eebf891828065.jpg">
+  <img src="https://telegra.ph/file/924af9899e7825d9427e3.jpg">
 </p>
 
 ## ✨ Features
