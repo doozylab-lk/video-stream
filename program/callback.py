@@ -42,7 +42,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "⚡️Maintainer", url="https://t.me/dhananjayarecord"
+                        "🚀SOURCE CODE🚀", url="https://github.com/doozylab-lk/video-stream"
                     )
                 ],
             ]
