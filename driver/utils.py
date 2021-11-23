@@ -1,4 +1,4 @@
-from driver.doozy import call_py
+from driver.veez import call_py
 from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from driver.queues import QUEUE, clear_queue, get_queue, pop_an_item
