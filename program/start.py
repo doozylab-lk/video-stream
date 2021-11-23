@@ -70,7 +70,7 @@ async def start_(client: Client, message: Message):
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Commands", url="https://telegra.ph/DHANANJAYA-BOTS-11-18"),
-                    InlineKeyboardButton("❤️ Owner", url=f"https://t.me/dhananjayarecord"),
+                    InlineKeyboardButton("❤️ Owner", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
