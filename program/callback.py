@@ -29,7 +29,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("📚 Commands", url="https://telegra.ph/DHANANJAYA-BOTS-11-18"),
                     InlineKeyboardButton("❤️ Owner", url=f"https://t.me/dhananjayarecord"),
                 ],
                 [
@@ -66,7 +66,7 @@ async def cbguides(_, query: CallbackQuery):
 
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
@@ -80,7 +80,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » **press the button below to read the explanation and see the list of available commands !**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -115,7 +115,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /uptime - show the bot uptime status
 » /alive - show the bot alive info (in group)
 
-⚡️ __Powered by {BOT_NAME} AI__""",
+⚡️ __Powered by {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -138,7 +138,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotjoin - invite the userbot to join group
 » /userbotleave - order userbot to leave from group
 
-⚡️ __Powered by {BOT_NAME} AI__""",
+⚡️ __Powered by {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -153,7 +153,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /rmd - clean all downloaded files
 » /leaveall - order userbot to leave from all group
 
-⚡ __Powered by {BOT_NAME} AI__""",
+⚡ __Powered by {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -174,6 +174,7 @@ async def cbmenu(_, query: CallbackQuery):
                 InlineKeyboardButton("⏹", callback_data="cbstop"),
                 InlineKeyboardButton("⏸", callback_data="cbpause"),
                 InlineKeyboardButton("▶️", callback_data="cbresume"),
+                InlineKeyboardButton("⏭️", callback_data="cbskip"),
             ],[
                 InlineKeyboardButton("🔇", callback_data="cbmute"),
                 InlineKeyboardButton("🔊", callback_data="cbunmute"),
