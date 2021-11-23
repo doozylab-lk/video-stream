@@ -62,6 +62,7 @@
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
+            "value": "doozylab_lk"
         }
     },
     "addons": [],
