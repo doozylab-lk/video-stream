@@ -63,21 +63,21 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ADD ME TO YOUR GROUP➕",
+                        "➕Add Me To Youre Group➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ BBASIC GUIDE", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 CCOMMANDS", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ OWNER", url=f"https://t.me/dhananjayarecord"),
+                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("❤️ Owner", url=f"https://t.me/dhananjayarecord"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 OFFICIAL GROUP", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 OFFICIAL CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
