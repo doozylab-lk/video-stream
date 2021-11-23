@@ -1,3 +1,9 @@
+## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm DOOZY YEZ
+
+## Let's connect!
+<p>
+    <a href="https://t.me/doozylab_lk" target="blank"><img src="https://img.shields.io/badge/@doozylab_lk-30302f?style=flat&logo=telegram" /></a>
+
 ## 🧪 Get SESSION_NAME from below:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@doozylab-lk/Session-String-Generator-1?v=1) ``Pyrogram``
