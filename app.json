@@ -8,9 +8,9 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/DhananjayaMadushanka",
+    "website": "https://t.me/doozylab_lk",
     "repository": "https://github.com/doozylab-lk/video-stream",
-    "success_url": "https://t.me/dhananjayarecord",
+    "success_url": "https://github.com/doozylab-lk",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -52,17 +52,17 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "DhananjayaRobotsFactory"
+            "value": "dhananjayarecord"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
             "required": true,
-            "value": "dhananjayarecord"
+            "value": "doozylab_lk"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "ᴅʜᴀɴᴀɴᴊᴀʏᴀ ʙᴏᴛ ᴘʀᴏᴊᴇᴄᴛ"
+            "value": "doozylab_lk"
         }
     },
     "addons": [],
