@@ -1,5 +1,8 @@
+## 🧪 Get SESSION_NAME from below:
 
- 🧪 GET SESSION_NAME SOON..
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@doozylab-lk/Session-String-Generator-1?v=1) ``Pyrogram``
+
+
 
 
 ## 🎭 Preview
