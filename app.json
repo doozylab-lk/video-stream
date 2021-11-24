@@ -74,7 +74,7 @@
             "required": true,
             "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
         },
-        "IMG_1": {
+        "ALIVE_IMG": {
             "description": "fill with your link to a photo you like",
             "required": true,
             "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
