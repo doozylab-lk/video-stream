@@ -50,12 +50,12 @@
             "value": "dhananjayabots"
         },
         "DURATION_LIMIT": {
-            "description": "if you have channel, then fill the channel username here without @",
+            "description": "then fill the duration limit here",
             "required": true,
             "value": "920"
         },
         "UPDATES_CHANNEL": {
-            "description": "if you have channel, then fill the channel username here without @",
+            "description": "if you have channel then fill the channel username here without ",
             "required": true,
             "value": "dhananjayarecord"
         },
