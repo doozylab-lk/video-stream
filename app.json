@@ -59,6 +59,11 @@
             "required": true,
             "value": "doozylab_lk"
         },
+        "Img_1": {
+            "description": "fill with your telegram account username without @",
+            "required": true,
+            "value": "doozylab_lk"
+        },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
