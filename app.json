@@ -59,10 +59,10 @@
             "required": true,
             "value": "doozylab_lk"
         },
-        "Img_1": {
-            "description": "fill with your telegram account username without @",
+        "IMG_1": {
+            "description": "fill with your Bot stream photo link",
             "required": true,
-            "value": "doozylab_lk"
+            "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
