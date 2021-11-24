@@ -60,7 +60,22 @@
             "value": "doozylab_lk"
         },
         "IMG_1": {
-            "description": "fill with your Bot stream photo link",
+            "description": "fill with your link to a photo you like",
+            "required": true,
+            "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
+        },
+        "IMG_2": {
+            "description": "fill with your link to a photo you like",
+            "required": true,
+            "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
+        },
+        "IMG_3": {
+            "description": "fill with your link to a photo you like",
+            "required": true,
+            "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
+        },
+        "IMG_1": {
+            "description": "fill with your link to a photo you like",
             "required": true,
             "value": "https://telegra.ph/file/a381b439e2bf6c61703f9.png"
         },
