@@ -6,7 +6,7 @@
     <a href="https://t.me/Lusiya_bot" target="blank"><img src="https://img.shields.io/badge/@demo_bot-30302f?style=flat&logo=telegram" /></a>
 
 
-<p align="center"><a href="https://t.me/DOOZYvideoBOT"><img src="https://telegra.ph/file/a381b439e2bf6c61703f9.png"></a></p>
+<p align="center"><a href="https://t.me/doozylab_lk"><img src="https://telegra.ph/file/a381b439e2bf6c61703f9.png"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
