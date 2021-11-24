@@ -29,7 +29,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [InlineKeyboardButton("ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", url="https://telegra.ph/DHANANJAYA-BOTS-11-18"),
+                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbcommands"),
                     InlineKeyboardButton("❤ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
@@ -168,13 +168,13 @@ async def cbmenu(_, query: CallbackQuery):
     if not a.can_manage_voice_chats:
         return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
     await query.edit_message_text(
-        f"⚙️ **settings of** {query.message.chat.title}\n\n⏸ : pause stream\n▶️ : resume stream\n⏹ : stop stream\n⏭️ : skip stream\n🔇 : mute userbot\n🔊 : unmute userbot",
+        f"⚙️ {query.message.chat.title}\n\n⏸ : pause stream\n▶️ : resume stream\n⏹ : stop stream\n⏭️ : skip stream\n🔇 : mute userbot\n🔊 : unmute userbot",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton("⏹", callback_data="cbstop"),
                 InlineKeyboardButton("⏸", callback_data="cbpause"),
                 InlineKeyboardButton("▶️", callback_data="cbresume"),
-                InlineKeyboardButton("⏭️", callback_data="cskip"),
+                InlineKeyboardButton("⏭️", callback_data="skip"),
             ],[
                 InlineKeyboardButton("🔇", callback_data="cbmute"),
                 InlineKeyboardButton("🔊", callback_data="cbunmute"),
