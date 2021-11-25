@@ -10,14 +10,6 @@ BOT_TOKEN = os.environ['BOT_TOKEN']
 downloads = './downloads/{}/'
 
 #Button
-START_BUTTONS=[
-    [
-        InlineKeyboardButton('Source', url='https://github.com/doozylab-lk/Tik-Tok-download'),
-        InlineKeyboardButton('Project Channel', url='https://t.me/dhananjayarecord'),
-    ],
-    [InlineKeyboardButton('Author', url='https://t.me/doozylab_lk')],
-]
-
 DL_BUTTONS=[
     [
         InlineKeyboardButton('No Watermark', callback_data='nowm'),
