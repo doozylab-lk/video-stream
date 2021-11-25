@@ -30,6 +30,7 @@
 - Playlist & Queue support
 - Skip, Pause, Resume, Stop feature
 - Music & Video downloader feature
+- Tik Tok Video downloader feature 
 - Inline Search support
 - YouTube direct search support
 - YouTube/Local/Live/m3u8 stream support
