@@ -29,8 +29,8 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [InlineKeyboardButton("ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbcommands"),
-                    InlineKeyboardButton("❤ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbbasic"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
