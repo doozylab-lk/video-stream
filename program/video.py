@@ -195,7 +195,7 @@ async def v(c: Client, m: Message):
                     songname = search[0]
                     url = search[1]
                     doozy, ytlink = await ytdl(url)
-                    if veez == 0:
+                    if doozy == 0:
                         await loser.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
                     else:
                         if chat_id in QUEUE:
