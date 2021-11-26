@@ -4,7 +4,7 @@ import re
 from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, UPDATES_CHANNEL
 from driver.filters import command, other_filters
 from driver.queues import QUEUE, add_to_queue
-from driver.veez import call_py, user
+from driver.doozy import call_py, user
 from pyrogram import Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -168,8 +168,8 @@ async def play(c: Client, m: Message):
                 else:
                     songname = search[0]
                     url = search[1]
-                    veez, ytlink = await ytdl(url)
-                    if veez == 0:
+                    doozy, ytlink = await ytdl(url)
+                    if doozy == 0:
                         await suhu.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
                     else:
                         if chat_id in QUEUE:
@@ -218,8 +218,8 @@ async def play(c: Client, m: Message):
             else:
                 songname = search[0]
                 url = search[1]
-                veez, ytlink = await ytdl(url)
-                if veez == 0:
+                doozy, ytlink = await ytdl(url)
+                if doozy == 0:
                     await suhu.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
                 else:
                     if chat_id in QUEUE:
@@ -335,10 +335,10 @@ async def stream(c: Client, m: Message):
         regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
         match = re.match(regex, link)
         if match:
-            veez, livelink = await ytdl(link)
+            doozy, livelink = await ytdl(link)
         else:
             livelink = link
-            veez = 1
+            doozy = 1
 
         if veez == 0:
             await suhu.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
