@@ -52,8 +52,8 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(command(["vplay", f"vplay@{BOT_USERNAME}"]) & other_filters)
-async def vplay(c: Client, m: Message):
+@Client.on_message(command(["v", f"v@{BOT_USERNAME}"]) & other_filters)
+async def v(c: Client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
@@ -194,7 +194,7 @@ async def vplay(c: Client, m: Message):
                 else:
                     songname = search[0]
                     url = search[1]
-                    veez, ytlink = await ytdl(url)
+                    doozy, ytlink = await ytdl(url)
                     if veez == 0:
                         await loser.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
                     else:
@@ -248,8 +248,8 @@ async def vplay(c: Client, m: Message):
             else:
                 songname = search[0]
                 url = search[1]
-                veez, ytlink = await ytdl(url)
-                if veez == 0:
+                doozy, ytlink = await ytdl(url)
+                if doozy == 0:
                     await loser.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
                 else:
                     if chat_id in QUEUE:
@@ -287,8 +287,8 @@ async def vplay(c: Client, m: Message):
                             await m.reply_text(f"🚫 error: `{ep}`")
 
 
-@Client.on_message(command(["vstream", f"vstream@{BOT_USERNAME}"]) & other_filters)
-async def vstream(c: Client, m: Message):
+@Client.on_message(command(["vs", f"vs@{BOT_USERNAME}"]) & other_filters)
+async def vs(c: Client, m: Message):
     m.reply_to_message
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
@@ -381,12 +381,12 @@ async def vstream(c: Client, m: Message):
         regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
         match = re.match(regex, link)
         if match:
-            veez, livelink = await ytdl(link)
+            doozy, livelink = await ytdl(link)
         else:
             livelink = link
-            veez = 1
+            doozy = 1
 
-        if veez == 0:
+        if doozy == 0:
             await loser.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
         else:
             if chat_id in QUEUE:
