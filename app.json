@@ -8,7 +8,7 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/doozylab_lk",
+    "website": "https://t.me/doozylab",
     "repository": "https://github.com/doozylab-lk/video-stream",
     "success_url": "https://github.com/doozylab-lk",
     "env": {
@@ -47,7 +47,7 @@
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": true,
-            "value": "dhananjayabots"
+            "value": "doozylablk"
         },
         "DURATION_LIMIT": {
             "description": "then fill the duration limit here",
@@ -57,7 +57,7 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel then fill the channel username here without ",
             "required": true,
-            "value": "dhananjayarecord"
+            "value": "doozylab"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
@@ -87,7 +87,7 @@
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "doozylab"
+            "value": "DOOZY"
         }
     },
     "addons": [],
