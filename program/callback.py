@@ -68,7 +68,7 @@ async def cbguides(_, query: CallbackQuery):
 
 ⚡__ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("«🔙ɢᴏ ʙᴀᴄᴋ", callback_data="cbstart")]]
         ),
     )
 
@@ -84,12 +84,12 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("«ᴀᴅᴍɪɴ ᴄᴍᴅ»", callback_data="cbadmin"),
+                    InlineKeyboardButton("«sᴜᴅᴏ ᴄᴍᴅ»", callback_data="cbsudo"),
+                                                          
+                    InlineKeyboardButton("«ʙᴀsɪᴄ ᴄᴍᴅ»", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
-                ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
+                    InlineKeyboardButton("«🔙ɢᴏ ʙᴀᴄᴋ»", callback_data="cbstart")
                 ],
             ]
         ),
@@ -117,7 +117,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡__ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("«🔙ɢᴏ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -140,7 +140,7 @@ async def cbadmin(_, query: CallbackQuery):
 
 ⚡__ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("«🔙ɢᴏ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -155,7 +155,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 ⚡__ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("«🔙ɢᴏ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -174,7 +174,7 @@ async def cbmenu(_, query: CallbackQuery):
                 InlineKeyboardButton("⏹", callback_data="cbstop"),
                 InlineKeyboardButton("⏸", callback_data="cbpause"),
                 InlineKeyboardButton("▶️", callback_data="cbresume"),
-                InlineKeyboardButton("⏭️", callback_data="skip"),
+                InlineKeyboardButton("⏭️", callback_data="cbskip"),
             ],[
                 InlineKeyboardButton("🔇", callback_data="cbmute"),
                 InlineKeyboardButton("🔊", callback_data="cbunmute"),
