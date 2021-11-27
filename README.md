@@ -24,19 +24,19 @@
   <img src="https://telegra.ph/file/924af9899e7825d9427e3.jpg">
 </p>
 
-## ✨ Features
-- Music & Video stream support
-- MultiChat support
-- Playlist & Queue support
-- Skip, Pause, Resume, Stop feature
-- Music & Video downloader feature
-- Inline Search support
-- YouTube direct search support
-- YouTube/Local/Live/m3u8 stream support
-- Inline Search support
-- Control With Button support
-- Volume Control
-- Userbot Auto Join
+## ғᴇᴀᴛᴜʀᴇs
+- ᴍᴜsɪᴄ & ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍ sᴜᴘᴘᴏʀᴛ 
+- ᴍᴜʟᴛɪᴄʜᴀᴛ sᴜᴘᴘᴏʀᴛ 
+- ᴘʟᴀʏʟɪsᴛ & ǫᴜᴇᴜᴇ sᴜᴘᴘᴏʀᴛ 
+- sᴋɪᴘ, ᴘᴀᴜsᴇ, ʀᴇsᴜᴍᴇ, sᴛᴏᴘ ғᴇᴀᴛᴜʀᴇ 
+- ᴍᴜsɪᴄ & ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ғᴇᴀᴛᴜʀᴇ 
+- ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ sᴜᴘᴘᴏʀᴛ 
+- ʏᴏᴜᴛᴜʙᴇ ᴅɪʀᴇᴄᴛ sᴇᴀʀᴄʜ sᴜᴘᴘᴏʀᴛ 
+- ʏᴏᴜᴛᴜʙᴇ/ʟᴏᴄᴀʟ/ʟɪᴠᴇ/ᴍ𝟹ᴜ𝟾 sᴛʀᴇᴀᴍ sᴜᴘᴘᴏʀᴛ 
+- ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ sᴜᴘᴘᴏʀᴛ 
+- ᴄᴏɴᴛʀᴏʟ ᴡɪᴛʜ ʙᴜᴛᴛᴏɴ sᴜᴘᴘᴏʀᴛ 
+- ᴠᴏʟᴜᴍᴇ ᴄᴏɴᴛʀᴏʟ 
+- ᴜsᴇʀʙᴏᴛ ᴀᴜᴛᴏ ᴊᴏɪɴ
 
 ## Heroku Deployment
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
