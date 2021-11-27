@@ -195,24 +195,31 @@ async def cbpause(_, query: CallbackQuery):
     else:
         await query.answer("❌ nothing is currently streaming", show_alert=True)
 
-@Client.on_callback_query(filters.regex("cbskip"))
-async def cbskip(_, query: CallbackQuery):
-    if query.message.sender_chat:
-        return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
-    a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
-    if not a.can_manage_voice_chats:
-        return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
-    chat_id = query.message.chat.id
-    if chat_id in QUEUE:
-        try:
-            await call_py.skip_stream(chat_id)
-            await query.edit_message_text(
-                " the streaming has skiped", reply_markup=bttn
-            )
-        except Exception as e:
-            await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
+@Client.on_message(command("skip") & other_filters)
+@errors
+@authorized_users_only
+async def skip(_, message: Message):
+    global que
+    chat_id = get_chat_id(message.chat)
+    if chat_id not in callsmusic.active_chats:
+        await message.reply_text("❗ Nothing is playing to skip!")
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        queues.task_done(chat_id)
+        if queues.is_empty(chat_id):
+            await callsmusic.stop(chat_id)
+        else:
+            await callsmusic.set_stream(
+                chat_id, 
+                queues.get(chat_id)["file"]
+            )
+
+    qeue = que.get(chat_id)
+    if qeue:
+        skip = qeue.pop(0)
+    if not qeue:
+        return
+    await message.reply_text(f"- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**")
+
 @Client.on_callback_query(filters.regex("cbresume"))
 async def cbresume(_, query: CallbackQuery):
     if query.message.sender_chat:
