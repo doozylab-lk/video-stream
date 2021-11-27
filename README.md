@@ -8,7 +8,7 @@
 
 <p align="center"><a href="https://t.me/doozylab"><img src="https://telegra.ph/file/a381b439e2bf6c61703f9.png"></a></p>
 <p align="center">
-    <br><b>ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍ ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴇʟᴇʀᴀᴍ ʙᴏᴛ ᴛʜᴀᴛ's ᴀʟʟᴏᴡ ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴠɪᴅᴇᴏ & ᴍᴜsɪᴄ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴊᴀᴛ</b><br>
+    <br><b>ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍ ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴇʟᴇʀᴀᴍ ʙᴏᴛ ᴛʜᴀᴛ's ᴀʟʟᴏᴡ ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴠɪᴅᴇᴏ & ᴍᴜsɪᴄ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ</b><br>
 </p>
 
 
@@ -19,7 +19,7 @@
 
 
 
-## 🎭 Preview
+## ᴘʀᴇᴠɪᴇᴡ
 <p align="center">
   <img src="https://telegra.ph/file/924af9899e7825d9427e3.jpg">
 </p>
