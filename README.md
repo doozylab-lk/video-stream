@@ -1,14 +1,14 @@
-## Hello <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> ❤️🇱🇰
+## ʜᴇʟʟᴏ <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> ❤️🇱🇰
 
 ## Let's connect!
 <p>
-    <a href="https://t.me/doozylab_lk" target="blank"><img src="https://img.shields.io/badge/@doozylab-30302f?style=flat&logo=telegram" /></a>
-    <a href="https://t.me/doozylabmusicbot" target="blank"><img src="https://img.shields.io/badge/@demo_bot-30302f?style=flat&logo=telegram" /></a>
+    <a href="https://t.me/doozylab_lk" target="blank"><img src="https://img.shields.io/badge/@ᴅᴏᴏᴢʏ_ʟᴀʙ_ʟᴋ-30302f?style=flat&logo=telegram" /></a>
+    <a href="https://t.me/doozylabmusicbot" target="blank"><img src="https://img.shields.io/badge/@ᴅᴇᴍᴏ_ʙᴏᴛ-30302f?style=flat&logo=telegram" /></a>
 
 
 <p align="center"><a href="https://t.me/doozylab"><img src="https://telegra.ph/file/a381b439e2bf6c61703f9.png"></a></p>
 <p align="center">
-    <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
+    <br><b>ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍ ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴇʟᴇʀᴀᴍ ʙᴏᴛ that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
 
 
