@@ -1,6 +1,6 @@
 {
-    "name": "doozylab-lk™🇱🇰",
-    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat.",
+    "name": "ᴅᴏᴏᴢʏ-ʟᴀʙ-ʟᴋ",
+    "description": "ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ sᴛʀᴇᴀᴍɪɴɢ ᴠɪᴅᴇᴏ & ᴍᴜsɪᴄ ᴛʀᴏᴜɢʜᴛ ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ.",
     "logo": "https://telegra.ph/file/a381b439e2bf6c61703f9.png",
     "keywords": [
         "pytgcalls",
@@ -87,7 +87,7 @@
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "DOOZY"
+            "value": "ᴅᴏᴏᴢʏ"
         }
     },
     "addons": [],
