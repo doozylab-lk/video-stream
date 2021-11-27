@@ -38,13 +38,13 @@
 - ᴠᴏʟᴜᴍᴇ ᴄᴏɴᴛʀᴏʟ 
 - ᴜsᴇʀʙᴏᴛ ᴀᴜᴛᴏ ᴊᴏɪɴ
 
-## Heroku Deployment
-The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
+## ʜᴇʀᴏᴋᴜ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
+ᴛʜᴇ ᴇᴀsʏ ᴡᴀʏ ᴛᴏ ʜᴏsᴛ ᴛʜɪs ʙᴏᴛ, ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ, ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴀᴘᴘ ᴄᴏᴜɴᴛʀʏ ᴛᴏ ᴇᴜʀᴏᴘᴇ (ɪᴛ ᴡɪʟʟ ʜᴇʟᴘ ᴛᴏ ᴍᴀᴋᴇ ᴛʜᴇ ʙᴏᴛ sᴛᴀʙʟᴇ).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/doozylab-lk/video-stream)
 
 
 
 
-### Support & Updates 🎑
+### sᴜᴘᴘᴏʀᴛ & ᴜᴘᴅᴀᴛᴇs 
 <a href="https://t.me/doozylablk"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/doozylab"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
