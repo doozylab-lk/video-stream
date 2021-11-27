@@ -198,26 +198,43 @@ async def cbpause(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("skip"))
 async def skip(_, message: Message):
-    global que
-    chat_id = get_chat_id(message.chat)
-    if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ Nothing is playing to skip!")
-    else:
-        queues.task_done(chat_id)
-        if queues.is_empty(chat_id):
-            await callsmusic.stop(chat_id)
+    if query.message.sender_chat:
+        return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
+    a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
+    if not a.can_manage_voice_chats:
+        return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
+    chat_id = query.message.chat.id
+    if chat_id in QUEUE:
+    if len(m.command) < 2:
+        op = await skip_current_song(chat_id)
+        if op == 0:
+            await m.reply("❌ nothing is currently playing")
+        elif op == 1:
+            await m.reply("✅ __Queues__ is empty.\n\n• userbot leaving voice chat")
         else:
-            await callsmusic.set_stream(
-                chat_id, 
-                queues.get(chat_id)["file"]
+            await m.reply_photo(
+                photo=f"{IMG_3}",
+                caption=f"⏭ **Skipped to the next track.**\n\n🏷 **Name:** [{op[0]}]({op[1]})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {m.from_user.mention()}",
+                reply_markup=keyboard,
             )
+    else:
+        skip = m.text.split(None, 1)[1]
+        OP = "🗑 **removed song from queue:**"
+        if chat_id in QUEUE:
+            items = [int(x) for x in skip.split(" ") if x.isdigit()]
+            items.sort(reverse=True)
+            for x in items:
+                if x == 0:
+                    pass
+                else:
+                    hm = await skip_item(chat_id, x)
+                    if hm == 0:
+                        pass
+                    else:
+                        OP = OP + "\n" + f"**#{x}** - {hm}"
+            await m.reply(OP)
 
-    qeue = que.get(chat_id)
-    if qeue:
-        skip = qeue.pop(0)
-    if not qeue:
-        return
-    await message.reply_text(f"- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**")
+
 
 @Client.on_callback_query(filters.regex("cbresume"))
 async def cbresume(_, query: CallbackQuery):
