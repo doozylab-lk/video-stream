@@ -195,8 +195,8 @@ async def cbpause(_, query: CallbackQuery):
     else:
         await query.answer("❌ nothing is currently streaming", show_alert=True)
 
-@Client.on_callback_query(filters.regex("skip"))
-async def skip(_, query: CallbackQuery):
+@Client.on_callback_query(filters.regex("cbskip"))
+async def cbskip(_, query: CallbackQuery):
     if query.message.sender_chat:
         return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
@@ -205,7 +205,7 @@ async def skip(_, query: CallbackQuery):
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
         try:
-            await call_py.skip(chat_id)
+            await call_py.skip_item(chat_id)
             await query.edit_message_text(
                 " the streaming has skiped", reply_markup=bttn
             )
