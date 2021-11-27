@@ -197,14 +197,11 @@ async def cbpause(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbskip"))
 async def cbskip(_, query: CallbackQuery):
-    if query.message.sender_chat:
-        return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
-    a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
-    if not a.can_manage_voice_chats:
-        return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
-    chat_id = query.message.chat.id
-    if chat_id in QUEUE:
-        try:
+        if op == 0:
+            await m.reply("❌ nothing is currently playing")
+        elif op == 1:
+            await m.reply("✅ __Queues__ is empty.\n\n• userbot leaving voice chat")
+        else:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
             await query.edit_message_text("✅ **the streaming has skiped**", reply_markup=bcl)
