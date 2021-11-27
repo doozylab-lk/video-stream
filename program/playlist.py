@@ -11,7 +11,7 @@ from driver.filters import command, other_filters
 
 
 keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🗑 Close", callback_data="cls")]]
+    [[InlineKeyboardButton("«ᴄʟᴏsᴇ»", callback_data="cls")]]
 )
 
 
