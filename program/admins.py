@@ -195,9 +195,8 @@ async def cbpause(_, query: CallbackQuery):
     else:
         await query.answer("❌ nothing is currently streaming", show_alert=True)
 
-
 @Client.on_callback_query(filters.regex("skip"))
-async def skip(_, message: Message):
+async def skip(_, query: CallbackQuery):
     if query.message.sender_chat:
         return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
@@ -205,34 +204,15 @@ async def skip(_, message: Message):
         return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
-    if len(m.command) < 2:
-        op = await skip_current_song(chat_id)
-        if op == 0:
-            await m.reply("❌ nothing is currently playing")
-        elif op == 1:
-            await m.reply("✅ __Queues__ is empty.\n\n• userbot leaving voice chat")
-        else:
-            await m.reply_photo(
-                photo=f"{IMG_3}",
-                caption=f"⏭ **Skipped to the next track.**\n\n🏷 **Name:** [{op[0]}]({op[1]})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {m.from_user.mention()}",
-                reply_markup=keyboard,
+        try:
+            await call_py.skip(chat_id)
+            await query.edit_message_text(
+                " the streaming has skiped", reply_markup=bttn
             )
+        except Exception as e:
+            await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        skip = m.text.split(None, 1)[1]
-        OP = "🗑 **removed song from queue:**"
-        if chat_id in QUEUE:
-            items = [int(x) for x in skip.split(" ") if x.isdigit()]
-            items.sort(reverse=True)
-            for x in items:
-                if x == 0:
-                    pass
-                else:
-                    hm = await skip_item(chat_id, x)
-                    if hm == 0:
-                        pass
-                    else:
-                        OP = OP + "\n" + f"**#{x}** - {hm}"
-            await m.reply(OP)
+        await query.answer("❌ nothing is currently streaming", show_alert=True)
 
 
 
