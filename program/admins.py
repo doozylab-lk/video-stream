@@ -205,7 +205,7 @@ async def cbskip(_, query: CallbackQuery):
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
         try:
-            await call_py.skip_item(chat_id)
+            await call_py.skip_current_song(chat_id)
             await query.edit_message_text(
                 " the streaming has skiped", reply_markup=bttn
             )
