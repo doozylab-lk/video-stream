@@ -15,7 +15,7 @@ from pyrogram.types import (
 
 
 bttn = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("«🔙ɢᴏ ʙᴀᴄᴋ", callback_data="cbmenu")]]
+    [[InlineKeyboardButton("🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="cbmenu")]]
 )
 
 
@@ -61,7 +61,9 @@ async def skip(client, m: Message):
         if op == 0:
             await m.reply("❌ nothing is currently playing")
         elif op == 1:
-            await m.reply("✅ __Queues__ is empty.\n\n• userbot leaving voice chat")
+            await m.reply("✅ __Queues__ **is empty.**\n\n**• userbot leaving voice chat**")
+        elif op == 2:
+            await m.reply("🗑️ **Clearing the Queues**\n\n**• userbot leaving voice chat**")
         else:
             await m.reply_photo(
                 photo=f"{IMG_3}",
@@ -195,6 +197,7 @@ async def cbpause(_, query: CallbackQuery):
     else:
         await query.answer("❌ nothing is currently streaming", show_alert=True)
 
+
 @Client.on_callback_query(filters.regex("cbresume"))
 async def cbresume(_, query: CallbackQuery):
     if query.message.sender_chat:
@@ -227,7 +230,7 @@ async def cbstop(_, query: CallbackQuery):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await query.edit_message_text("✅ **the streaming has ended**", reply_markup=bcl)
+            await query.edit_message_text("✅ **this streaming has ended**", reply_markup=bcl)
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
