@@ -195,9 +195,6 @@ async def cbpause(_, query: CallbackQuery):
     else:
         await query.answer("❌ nothing is currently streaming", show_alert=True)
 
-
-
-
 @Client.on_callback_query(filters.regex("cbresume"))
 async def cbresume(_, query: CallbackQuery):
     if query.message.sender_chat:
