@@ -34,6 +34,21 @@ async def join_chat(c: Client, m: Message):
             return await user.send_message(chat_id, "✅ userbot already in chat")
         return await user.send_message(chat_id, "✅ userbot already in chat")
 
+@Client.on_message(
+    command(["play", f"play@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
+)
+@authorized_users_only
+async def join_chat(c: Client, m: Message):
+    chat_id = m.chat.id
+    try:
+        invite_link = await m.chat.export_invite_link()
+        if "+" in invite_link:
+            link_hash = (invite_link.replace("+", "")).split("t.me/")[1]
+            await user.join_chat(f"https://t.me/joinchat/{link_hash}")
+        await m.chat.promote_member(
+            (await user.get_me()).id,
+            can_manage_voice_chats=True
+        )
 
 @Client.on_message(command(["userbotleave",
                             f"leave@{BOT_USERNAME}"]) & filters.group & ~filters.edited
