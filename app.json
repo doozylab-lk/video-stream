@@ -52,7 +52,7 @@
         "DURATION_LIMIT": {
             "description": "then fill the duration limit here",
             "required": true,
-            "value": "920"
+            "value": "15"
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel then fill the channel username here without ",
