@@ -67,11 +67,6 @@ async def start_(client: Client, message: Message):
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
-                [
-                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbbasic"),
-                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
-                ],
                 [
                     InlineKeyboardButton(
                         "ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
@@ -82,7 +77,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/doozylab-lk/video-stream"
+                        "ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"
                     )
                 ],
             ]
