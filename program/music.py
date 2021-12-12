@@ -53,10 +53,10 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="«ᴍᴇɴᴜ»", callback_data="cbmenu"),
-                InlineKeyboardButton(text="«ᴄʟᴏsᴇ»", callback_data="cls"),
+                InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/doozylab-lk/video-stream"),
+                InlineKeyboardButton(text="ꜱᴛɪᴄᴋᴇʀꜱ", url="https://https://t.me/addstickers/FriendsOfSriLanka"),
             ]
         ]
     )
@@ -264,10 +264,10 @@ async def stream(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="«ᴍᴇɴᴜ»", callback_data="cbmenu"),
-                InlineKeyboardButton(text="«ᴄʟᴏsᴇ»", callback_data="cls"),
+                InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/doozylab-lk/video-stream"),
+                InlineKeyboardButton(text="ꜱᴛɪᴄᴋᴇʀꜱ", url="https://https://t.me/addstickers/FriendsOfSriLanka"),
             ]
         ]
     )
