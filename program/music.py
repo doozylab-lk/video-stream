@@ -56,8 +56,7 @@ async def play(c: Client, m: Message):
                 InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
                 InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton(text="ꜱᴛɪᴄᴋᴇʀꜱ", url="https://https://t.me/addstickers/FriendsOfSriLanka"),
-            ]
+                InlineKeyboardButton(text="ꜱᴛɪᴄᴋᴇʀꜱ", url="https://https://t.me/addstickers/FriendsOfSriLanka"),]
         ]
     )
     if m.sender_chat:
@@ -267,8 +266,7 @@ async def stream(c: Client, m: Message):
                 InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
                 InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton(text="ꜱᴛɪᴄᴋᴇʀꜱ", url="https://https://t.me/addstickers/FriendsOfSriLanka"),
-            ]
+                InlineKeyboardButton(text="ꜱᴛɪᴄᴋᴇʀꜱ", url="https://https://t.me/addstickers/FriendsOfSriLanka"),]
         ]
     )
     if m.sender_chat:
