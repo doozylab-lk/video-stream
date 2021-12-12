@@ -49,7 +49,7 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("❌ song not found.\n\nplease give a valid song name.")
+        m.edit("❌ ꜱᴏɴɢ ɴᴏᴛ ꜰᴏᴜɴᴅ.\n\nᴘʟᴇᴀꜱᴇ ɢɪᴠᴇ ᴀ ᴠᴀʟɪᴅ ꜱᴏɴɢ ɴᴀᴍᴇ.")
         print(str(e))
         return
     m.edit("📥")
@@ -58,12 +58,12 @@ def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**🎧 Uploader @{bn}**"
+        rep = f"**ᴜᴘʟᴏᴀᴅᴇʀ @{bn}**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
-        m.edit("📤 uploading file...")
+        m.edit("📤")
         message.reply_audio(
             audio_file,
             caption=rep,
@@ -74,7 +74,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ error, wait for bot owner to fix")
+        m.edit("❌ ᴇʀʀᴏʀ, ᴡᴀɪᴛ ꜰᴏʀ ʙᴏᴛ ᴏᴡɴᴇʀ ᴛᴏ ꜰɪx")
         print(e)
 
     try:
@@ -147,4 +147,4 @@ async def lyrics(_, message):
         result = f"{resp['data']}"
         await rep.edit(result)
     except Exception:
-        await rep.edit("❌ **results of lyric not found.**\n\n» **please give a valid song name.**")
+        await rep.edit("❌ **ʀᴇꜱᴜʟᴛꜱ ᴏꜰ ʟʏʀɪᴄ ɴᴏᴛ ꜰᴏᴜɴᴅ.**\n**ᴘʟᴇᴀꜱᴇ ɢɪᴠᴇ ᴀ ᴠᴀʟɪᴅ ꜱᴏɴɢ ɴᴀᴍᴇ.**")
