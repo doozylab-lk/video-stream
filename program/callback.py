@@ -38,9 +38,9 @@ async def cbstart(_, query: CallbackQuery):
                         "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
-                [
+                 [
                     InlineKeyboardButton(
-                        "ᴀꜱꜱɪꜱᴛᴀɴᴛ, url="https://t.me/DoozyMusicAssisten"
+                        "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/doozylab-lk/video-stream"
                     )
                 ],
             ]
