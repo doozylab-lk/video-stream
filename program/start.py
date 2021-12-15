@@ -132,5 +132,5 @@ async def get_uptime(client: Client, message: Message):
     await message.reply_text(
         "🤖 bot status:\n"
         f"• **uptime:** `{uptime}`\n"
-        nf"• **start time:** `{START_TIME_ISO}`"
+        f"• **start time:** `{START_TIME_ISO}`"
     )
