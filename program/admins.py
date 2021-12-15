@@ -34,7 +34,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ ʙᴏᴛ **ʀᴇʟᴏᴀᴅᴇᴅ ᴄᴏʀʀᴇᴄᴛʟʏ !**\n✅ **ᴀᴅᴍɪɴ ʟɪꜱᴛ** ʜᴀꜱ ʙᴇᴇɴ **ᴜᴘᴅᴀᴛᴇᴅ !**"
+        "✅ ʙᴏᴛ **ʀᴇʟᴏᴀᴅᴇᴅ ᴄᴏʀʀᴇᴄᴛʟʏ !**\n✅ **ᴀᴅᴍɪɴ ʟɪꜱᴛ** ʜᴀꜱ ʙᴇᴇɴ **ᴜᴘᴅᴀᴛᴇᴅ !**\n[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏᴏᴢʏ ʟᴀʙ ʟᴋ](https://t.me/doozylab)"
     )
 
 
