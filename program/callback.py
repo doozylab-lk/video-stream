@@ -40,7 +40,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "ᴀꜱꜱɪꜱᴛᴀɴᴛ, url="{ASSISTANT_NAME}"
+                        "ᴀꜱꜱɪꜱᴛᴀɴᴛ, url="https://t.me/DoozyMusicAssisten"
                     )
                 ],
             ]
