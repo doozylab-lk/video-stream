@@ -74,7 +74,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ ᴇʀʀᴏʀ, ᴡᴀɪᴛ ꜰᴏʀ ʙᴏᴛ ᴏᴡɴᴇʀ ᴛᴏ ꜰɪx")
+        m.edit("❌ ᴇʀʀᴏʀ, ᴡᴀɪᴛ ꜰᴏʀ ʙᴏᴛ ᴏᴡɴᴇʀ ᴛᴏ ꜰɪx\n[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏᴏᴢʏ ʟᴀʙ ʟᴋ](https://t.me/doozylab)")
         print(e)
 
     try:
