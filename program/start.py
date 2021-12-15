@@ -107,7 +107,7 @@ async def alive(client: Client, message: Message):
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤"
+    alive = f"**ʜᴇʟʟᴏ {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ ʙᴏᴛ ɪꜱ ᴡᴏʀᴋɪɴɢ ɴᴏʀᴍᴀʟʟʏ\n🍀 ᴍʏ ᴍᴀꜱᴛᴇʀ: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ: `v{__version__}`\n🍀 ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀꜱɪᴏɴ: `{pyrover}`\n✨ ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ: `{__python_version__}`\n🍀 ᴘʏᴛɢᴄᴀʟʟꜱ ᴠᴇʀꜱɪᴏɴ: `{pytover.__version__}`\n✨ ᴜᴘᴛɪᴍᴇ ꜱᴛᴀᴛᴜꜱ: `{uptime}`\n\n**ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇ, ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ & ᴍᴜꜱɪᴄ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ'ꜱ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -121,7 +121,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`\n[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏᴏᴢʏ ʟᴀʙ ʟᴋ](https://t.me/doozylab)")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -132,5 +132,5 @@ async def get_uptime(client: Client, message: Message):
     await message.reply_text(
         "🤖 bot status:\n"
         f"• **uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
+        nf"• **start time:** `{START_TIME_ISO}`\n[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏᴏᴢʏ ʟᴀʙ ʟᴋ](https://t.me/doozylab)"
     )
