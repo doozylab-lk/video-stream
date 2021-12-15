@@ -59,10 +59,10 @@ async def vplay(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="«ᴍᴇɴᴜ»", callback_data="cbmenu"),
-                InlineKeyboardButton(text="«ᴄʟᴏsᴇ»", callback_data="cls"),
+                InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton(text="«ᴄʜᴀɴɴᴇʟ»", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
         ]
     )
@@ -284,7 +284,7 @@ async def vplay(c: Client, m: Message):
                             )
                         except Exception as ep:
                             await loser.delete()
-                            await m.reply_text(f"🚫 error: `{ep}`")
+                            await m.reply_text(f"🚫 ᴇʀʀᴏʀ: `{ep}`")
 
 
 @Client.on_message(command(["vstream", f"vstream@{BOT_USERNAME}"]) & other_filters)
@@ -294,15 +294,15 @@ async def vs(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="«ᴍᴇɴᴜ»", callback_data="cbmenu"),
-                InlineKeyboardButton(text="«ᴄʟᴏsᴇ»", callback_data="cls"),
+                InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton(text="«ᴄʜᴀɴɴᴇʟ»", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
         ]
     )
     if m.sender_chat:
-        return await m.reply_text("you're an __Anonymous Admin__ !\n\n» revert back to user account from admin rights.")
+        return await m.reply_text("ʏᴏᴜ'ʀᴇ ᴀɴ __ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ__ !\n\n» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜꜱᴇʀ ᴀᴄᴄᴏᴜɴᴛ ꜰʀᴏᴍ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ.")
     try:
         aing = await c.get_me()
     except Exception as e:
@@ -310,31 +310,31 @@ async def vs(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 ᴛᴏ ᴜꜱᴇ ᴍᴇ, ɪ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀɴ **ᴀᴅᴍɪɴɪꜱᴛʀᴀᴛᴏʀ** ᴡɪᴛʜ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ **ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ**:\n\n» ❌ __ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ__\n» ❌ __ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ__\n» ❌ __ᴀᴅᴅ ᴜꜱᴇʀꜱ__\n» ❌ __ᴍᴀɴᴀɢᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ__\n\nᴅᴀᴛᴀ ɪꜱ **ᴜᴘᴅᴀᴛᴇᴅ** ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀꜰᴛᴇʀ ʏᴏᴜ **ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ**"
         )
         return
     if not a.can_manage_voice_chats:
         await m.reply_text(
-            "missing required permission:" + "\n\n» ❌ __Manage video chat__"
+            "ᴍɪꜱꜱɪɴɢ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴ:" + "\n\n» ❌ __ᴍᴀɴᴀɢᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ__"
         )
         return
     if not a.can_delete_messages:
         await m.reply_text(
-            "missing required permission:" + "\n\n» ❌ __Delete messages__"
+            "ᴍɪꜱꜱɪɴɢ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴ:" + "\n\n» ❌ __ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ__"
         )
         return
     if not a.can_invite_users:
-        await m.reply_text("missing required permission:" + "\n\n» ❌ __Add users__")
+        await m.reply_text("ᴍɪꜱꜱɪɴɢ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴ:" + "\n\n» ❌ __ᴀᴅᴅ ᴜꜱᴇʀꜱ__")
         return
     if not a.can_restrict_members:
-        await m.reply_text("missing required permission:" + "\n\n» ❌ __Restrict users__")
+        await m.reply_text("ᴍɪꜱꜱɪɴɢ ʀᴇQᴜɪʀᴇᴅ ᴘᴇʀᴍɪꜱꜱɪᴏɴ:" + "\n\n» ❌ __ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ__")
         return
     try:
         ubot = await user.get_me()
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **ɪꜱ ʙᴀɴɴᴇᴅ ɪɴ ɢʀᴏᴜᴘ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ꜰɪʀꜱᴛ ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ.**"
             )
             return
     except UserNotParticipant:
@@ -342,7 +342,7 @@ async def vs(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **ᴜꜱᴇʀʙᴏᴛ ꜰᴀɪʟᴇᴅ ᴛᴏ ᴊᴏɪɴ**\n\n**ʀᴇᴀꜱᴏɴ**: `{e}`")
                 return
         else:
             try:
@@ -353,16 +353,16 @@ async def vs(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **ᴜꜱᴇʀʙᴏᴛ ꜰᴀɪʟᴇᴅ ᴛᴏ ᴊᴏɪɴ**\n\n**ʀᴇᴀꜱᴏɴ**: `{e}`"
                 )
 
     if len(m.command) < 2:
-        await m.reply("» give me a live-link/m3u8 url/youtube link to stream.")
+        await m.reply("» ɢɪᴠᴇ ᴍᴇ ᴀ ʟɪᴠᴇ-ʟɪɴᴋ/ᴍ3ᴜ8 ᴜʀʟ/ʏᴏᴜᴛᴜʙᴇ ʟɪɴᴋ ᴛᴏ ꜱᴛʀᴇᴀᴍ.")
     else:
         if len(m.command) == 2:
             link = m.text.split(None, 1)[1]
             Q = 720
-            loser = await m.reply("🔄 **processing stream...**")
+            loser = await m.reply("🔄 **ᴘʀᴏᴄᴇꜱꜱɪɴɢ ꜱᴛʀᴇᴀᴍ...**")
         elif len(m.command) == 3:
             op = m.text.split(None, 1)[1]
             link = op.split(None, 1)[0]
@@ -372,9 +372,9 @@ async def vs(c: Client, m: Message):
             else:
                 Q = 720
                 await m.reply(
-                    "» __only 720, 480, 360 allowed__ \n💡 **now streaming video in 720p**"
+                    "» __ᴏɴʟʏ 720, 480, 360 ᴀʟʟᴏᴡᴇᴅ__ \n💡 **ɴᴏᴡ ꜱᴛʀᴇᴀᴍɪɴɢ ᴠɪᴅᴇᴏ ɪɴ 720ᴘ**"
                 )
-            loser = await m.reply("🔄 **processing stream...**")
+            loser = await m.reply("🔄 **ᴘʀᴏᴄᴇꜱꜱɪɴɢ ꜱᴛʀᴇᴀᴍ...**")
         else:
             await m.reply("**/vstream {link} {720/480/360}**")
 
@@ -387,7 +387,7 @@ async def vs(c: Client, m: Message):
             doozy = 1
 
         if doozy == 0:
-            await loser.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
+            await loser.edit(f"❌ ʏᴛ-ᴅʟ ɪꜱꜱᴜᴇꜱ ᴅᴇᴛᴇᴄᴛᴇᴅ\n\n» `{ytlink}`")
         else:
             if chat_id in QUEUE:
                 pos = add_to_queue(chat_id, "Live Stream", livelink, link, "Video", Q)
@@ -395,7 +395,7 @@ async def vs(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Track added to the queue**\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                    caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ ᴛʜᴇ Qᴜᴇᴜᴇ**\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇQᴜᴇꜱᴛ ʙʏ:** {requester}\n🔢 **ᴀᴛ ᴘᴏꜱɪᴛɪᴏɴ »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -422,9 +422,9 @@ async def vs(c: Client, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"{IMG_2}",
-                        caption=f"💡 **[Live stream video]({link}) started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                        caption=f"💡 **[ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍ ᴠɪᴅᴇᴏ]({link}) ꜱᴛᴀʀᴛᴇᴅ.**\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ʀᴇQᴜᴇꜱᴛ ʙʏ:** {requester}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
                     await loser.delete()
-                    await m.reply_text(f"🚫 error: `{ep}`")
+                    await m.reply_text(f"🚫 ᴇʀʀᴏʀ: `{ep}`")
