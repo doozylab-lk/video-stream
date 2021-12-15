@@ -167,7 +167,7 @@ async def cbmenu(_, query: CallbackQuery):
     if not a.can_manage_voice_chats:
         return await query.answer("💡 ᴏɴʟʏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴍᴀɴᴀɢᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛʜᴀᴛ ᴄᴀɴ ᴛᴀᴘ ᴛʜɪꜱ ʙᴜᴛᴛᴏɴ !", show_alert=True)
     await query.edit_message_text(
-        f"{query.message.chat.title}\n\n⏸ : ᴘᴀᴜꜱᴇ ꜱᴛʀᴇᴀᴍ\n▶️ : ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍ\n⏹ : ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ\n🔇 : ᴍᴜᴛᴇ ᴜꜱᴇʀʙᴏᴛ\n🔊 : ᴜɴᴍᴜᴛᴇ ᴜꜱᴇʀʙᴏᴛ\n\n[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏᴏᴢʏ ʟᴀʙ ʟᴋ](https://t.me/doozylab)",
+        f"{query.message.chat.title}\n\n⏸ : ᴘᴀᴜꜱᴇ ꜱᴛʀᴇᴀᴍ\n▶️ : ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍ\n⏹ : ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ\n🔇 : ᴍᴜᴛᴇ ᴜꜱᴇʀʙᴏᴛ\n🔊 : ᴜɴᴍᴜᴛᴇ ᴜꜱᴇʀʙᴏᴛ",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton("⏹", callback_data="cbstop"),
