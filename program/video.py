@@ -57,10 +57,11 @@ async def vplay(c: Client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
+            [[
+                InlineKeyboardButton("⏹", callback_data="cbstop"),
+                InlineKeyboardButton("⏸", callback_data="cbpause"),
+                InlineKeyboardButton("▶️", callback_data="cbresume"),
+
             ],[
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
@@ -292,10 +293,11 @@ async def vs(c: Client, m: Message):
     m.reply_to_message
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls"),
+            [[
+                InlineKeyboardButton("⏹", callback_data="cbstop"),
+                InlineKeyboardButton("⏸", callback_data="cbpause"),
+                InlineKeyboardButton("▶️", callback_data="cbresume"),
+
             ],[
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
