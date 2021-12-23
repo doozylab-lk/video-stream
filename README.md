@@ -2,7 +2,7 @@
 
 ## ʟᴇᴛ's ᴄᴏɴᴇᴄᴛ!
 <p>
-    <a href="https://t.me/doozylab_lk" target="blank"><img src="https://img.shields.io/badge/@ᴅᴏᴏᴢʏ_ʟᴀʙ_ʟᴋ-30302f?style=flat&logo=telegram" /></a>
+    <a href="https://t.me/TeamDLK" target="blank"><img src="https://img.shields.io/badge/@Team-DLK-30302f?style=flat&logo=telegram" /></a>
     <a href="https://t.me/doozylabmusicbot" target="blank"><img src="https://img.shields.io/badge/@ᴅᴇᴍᴏ_ʙᴏᴛ-30302f?style=flat&logo=telegram" /></a>
 
 
@@ -47,4 +47,4 @@
 
 
 ### sᴜᴘᴘᴏʀᴛ & ᴜᴘᴅᴀᴛᴇs 
-<a href="https://t.me/doozylablk"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/doozylab"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/TeamDLKsupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/TeamDLK"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
