@@ -8,7 +8,7 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/doozylab",
+    "website": "https://t.me/TeamDLK",
     "repository": "https://github.com/doozylab-lk/video-stream",
     "success_url": "https://github.com/doozylab-lk",
     "env": {
@@ -47,17 +47,17 @@
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": true,
-            "value": "doozylablk"
+            "value": "TeamDLKsupport"
         },
         "DURATION_LIMIT": {
             "description": "then fill the duration limit here",
             "required": true,
-            "value": "920"
+            "value": "9200"
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel then fill the channel username here without ",
             "required": true,
-            "value": "doozylab"
+            "value": "TeamDLK"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
