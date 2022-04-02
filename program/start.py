@@ -75,7 +75,7 @@ async def start_(client: Client, message: Message):
                         "ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "newa", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
