@@ -44,8 +44,14 @@ The second easiest way to host this bot, Deploy on Okteto Cloud
 ## ʜᴇʀᴏᴋᴜ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
 ᴛʜᴇ ᴇᴀsʏ ᴡᴀʏ ᴛᴏ ʜᴏsᴛ ᴛʜɪs ʙᴏᴛ, ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ, ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴀᴘᴘ ᴄᴏᴜɴᴛʀʏ ᴛᴏ ᴇᴜʀᴏᴘᴇ (ɪᴛ ᴡɪʟʟ ʜᴇʟᴘ ᴛᴏ ᴍᴀᴋᴇ ᴛʜᴇ ʙᴏᴛ sᴛᴀʙʟᴇ).
 
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/doozylab-lk/video-stream)
 
+
+
+## ᴅᴇᴩʟᴏʏ ᴏɴ ᴏᴋᴛᴇᴛᴏ
+
+<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/doozylab-lk/video-stream"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p>
 
 
 
