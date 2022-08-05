@@ -11,6 +11,7 @@
     "website": "https://t.me/TeamDLK",
     "repository": "https://github.com/doozylab-lk/video-stream",
     "success_url": "https://github.com/doozylab-lk",
+    "stack": "container",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -89,7 +90,7 @@
             "required": true,
             "value": "ᴅᴏᴏᴢʏ"
         }
-    },
+   },
     "addons": [],
     "buildpacks": [
         {
@@ -107,6 +108,5 @@
             "quantity": 1,
             "size": "free"
         }
-    },
-    "stack": "container"
+    }
 }
